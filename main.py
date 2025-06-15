@@ -1,9 +1,11 @@
 class Student:
-    def __init__(self, fname,lname, age, courses):
+    def __init__(self, fname,lname, age, courses,salary):
         self.fname = fname
         self.lname = lname
         self.age = age
         self.courses = courses
+        self.pocket_money = 0
+        self.salary = salary
     
     #Method
     def get_fullname(self):
@@ -16,8 +18,8 @@ class Student:
         print("Courses:", ", ".join(self.courses))
         print("-" * 20)
 
-student1 = Student("Alice","Wonder", 20, ["Math", "English"])
-student2 = Student("Bob","Builder", 22, ["Physics", "History"])
+student1 = Student("Alice","Wonder", 20, ["Math", "English"],1000)
+student2 = Student("Bob","Builder", 22, ["Physics", "History"],2000)
 
 student1.display_info()
 student2.display_info()
